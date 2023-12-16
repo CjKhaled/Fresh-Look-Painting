@@ -1,40 +1,156 @@
 /* MAIN HOMEPAGE */
-#hero-section {
+@media screen and (max-width: 4000px) {
+  #hero-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+    position: relative;
+  }
 
-#hero-section .hero-right-side h1 {
+  #hero-section .hero-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+  }
+
+  #hero-section .hero-right-side h1 {
     font-family: var(--extra-bold);
     font-size: 42px;
-    max-width: 655px;
-}
+    width: 655px;
+    margin-top: 93px
+  }
 
-#hero-section .hero-right-side h2 {
+  #hero-section .hero-right-side h2 {
     font-family: var(--bold);
     font-size: 28px;
-    max-width: 439px;
-}
+    width: 439px;
+    height: 100px;
+  }
 
-#hero-section .hero-right-side p {
+  #hero-section .hero-right-side p {
     font-family: var(--medium);
     font-size: 20px;
-    max-width: 439px;
-}
+    width: 439px;
+    height: 179px;
+  }
 
-#hero-section .hero-right-side p span {
-    color: var(--primary-blue); 
-    font-family: var(--semi-bold);
-}
-
-#hero-section .hero-right-side h1 span {
+  #hero-section .hero-right-side p span {
     color: var(--primary-blue);
-   
-}
+    font-family: var(--semi-bold);
+  }
 
-#hero-section .hero-left-side .img-holder {
+  #hero-section .hero-right-side h1 span {
+    color: var(--primary-blue);
+  }
+
+  #hero-section .hero-left-side .img-holder {
     background-color: grey;
     width: 500px;
     height: 656px;
+    position: relative;
+  }
+
+  #hero-section .call-to-action {
+    font-size: 27px;
+    width: 439px;
+  }
+
+  #hero-section .background-square {
+    background-color: #F1F8FF;
+    height: 100%;
+    width: 530px;
+    position: absolute;
+    right: -136px;
+  }
+
+  #benefits-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  #benefits-section .benefits-title h2 {
+    font-size: 46px;
+    font-family: var(--section-header);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  #benefits-section .benefits-title h2 span {
+    color: var(--primary-green)
+  }
+
+  #benefits-section .benefits-title h2 span.blue {
+    color: var(--primary-blue);
+  }
+
+  #benefits-section .benefits-title p {
+    font-size: 20px;
+    font-family: var(--light);
+    text-align: center;
+  }
+
+  #benefits-section .benefits-title p span {
+    color: var(--primary-blue);
+    font-family: var(--semi-bold);
+  }
+
+  #benefits-section .benefits-content .benefits-list {
+    margin-top: 126px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+  }
+
+  #benefits-section .benefits-content .benefits-list .benefit {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+  }
+  
+  #benefits-section .benefits-content .benefits-list h2 {
+    color: var(--primary-blue);
+    font-family: var(--section-header);
+    font-size: 32px;
+    margin-bottom: 7px;
+  }
+
+  #benefits-section .benefits-content .benefits-list p {
+    font-family: var(--bold);
+    width: 455px;
+    margin-bottom: 26px;
+  }
+
+  #benefits-section .benefits-title {
+    position: inherit;
+  }
+
+  #benefits-section .benefits-content {
+    position: inherit;
+  }
+
+  #benefits-section .benefits-image {
+    position: absolute;
+    right: -136px;
+    top: 30px
+  }
+
+  #benefits-section .benefits-image img {
+    height: 900px;
+    width: 1440px
+  }
+
+  #testimonials-section .testimonials-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #testimonials-section .testimonials-content .testimonial {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #testimonials-section .testimonials-content .testimonial p {
+
+  }
 }
