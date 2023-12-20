@@ -38,8 +38,14 @@
   src: url("/fonts/Urbanist-Light.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "DM Serif Display Regular";
+    src: url('/fonts/DMSerifDisplay-Regular.woff');
+}
+
 :root {
-  --primary-blue: #0586b8;
+  --primary-blue: #0586B8;
+  /* #31b2e9 */
   --primary-green: #b4d36a;
   --primary-black: #17171c;
   --medium: "Urbanist-Medium";
@@ -48,6 +54,7 @@
   --extra-bold: "Urbanist-ExtraBold";
   --section-header: "Urbanist-Black";
   --light: "Urbanist-Light";
+  --number: "DM Serif Display Regular";
 }
 
 /* NAV BAR */
@@ -70,6 +77,10 @@
     align-items: center;
     width: 100%;
     margin: 0 136px;
+  }
+
+  .nav-button {
+    display: none;
   }
 
   ul.nav-menu {
@@ -141,7 +152,7 @@
     color: var(--primary-blue);
   }
 
-  .phone-number {
+   a .phone-number {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -159,7 +170,6 @@
     background-color: var(--primary-blue);
     font-family: var(--bold);
     font-size: 18px;
-    white-space: nowrap;
     cursor: pointer;
   }
 }
@@ -168,7 +178,7 @@ section {
   margin: 0 136px;
   margin-top: 76px;
   position: relative;
-  height: 941px;
+  height: fit-content;
 }
 
 /* Footer */
@@ -230,6 +240,7 @@ section {
   .footer-container .left-side .social-links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 54px;
     margin-top: 51px;
   }
@@ -258,4 +269,90 @@ section {
     text-decoration: underline;
   }
 }
+
+/* PHONE VIEW */
+@media screen and (max-width: 1400px) {
+  ul.nav-menu {
+    display: none;
+  }
+
+  ul.nav-menu.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    left: 0;
+    background-color: var(--primary-blue);
+    color: white;
+  }
+
+  a .phone-number {
+    font-size: 16px;
+    gap: 7px;
+    margin: 0;
+  }
+
+  .logo a img {
+    width: 160px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .nav-container {
+    margin: 0 24px;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  footer {
+    height: fit-content;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    margin: 84px 24px;
+    margin-bottom: 60px;
+  }
+
+  .footer-container .right-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 95px;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  .footer-container .left-side {
+    width: 321px;
+  }
+
+  section {
+    margin: 0 24px;
+    margin-top: 76px;
+}
+}
+
+/* GALAXY FOLD VIEW */
+
+@media screen and (max-width: 300px) {
+  .footer-container .left-side {
+    width: 240px;
+  }
+
+  article.footer {
+    width: 240px;
+    height: fit-content;
+  }
+}
+
+
 

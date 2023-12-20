@@ -1,0 +1,78 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    text-align: center;
+}
+
+#contact div > h2 {
+    font-family: var(--section-header);
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+#contact div > h2 span {
+    color: var(--primary-blue);
+}
+
+#contact div > h2 span.green {
+    color: var(--primary-green);
+}
+
+#contact div > h2 + p {
+    font-size: 20px;
+    font-family: var(--medium);
+}
+
+#contact .contact-methods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact .contact-methods .contact-method {
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    align-items: center; 
+}
+
+#contact .contact-methods .contact-method svg {
+    margin-bottom: 50px;
+    margin-top: 37px;
+}
+
+#contact .contact-methods .contact-method svg.email{
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+#contact .contact-methods .contact-method strong {
+    font-family: var(--section-header);
+    font-size: 46px;
+    margin-bottom: 35px;
+}
+
+#contact .contact-methods .contact-method p {
+    font-family: var(--semi-bold);
+    font-size: 20px;
+    margin-bottom: 38px;
+}
+
+#contact .contact-methods .contact-method p.email {
+    margin-bottom: 62px;
+}
+
+#contact .contact-methods .contact-method button.call-to-action {
+    font-size: 27px
+}
+
+#contact .contact-methods .contact-method .connect-social {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    flex-wrap: wrap;
+}

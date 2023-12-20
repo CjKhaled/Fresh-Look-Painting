@@ -1,0 +1,29 @@
+#mission-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    text-align: center;
+}
+
+#mission-section h2 {
+    font-family: var(--section-header);
+    font-size: 46px;
+    margin-bottom: 18px;
+}
+
+#mission-section h2 span {
+    color: var(--primary-blue);
+}
+
+#mission-section > div {
+    width: 355px;
+}
+
+#mission-section p {
+    font-size: 20px;
+    font-family: var(--medium);
+}
+
