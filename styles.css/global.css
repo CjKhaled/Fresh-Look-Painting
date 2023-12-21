@@ -44,8 +44,10 @@
 }
 
 :root {
-  --primary-blue: #0586B8;
+  --primary-blue: #158fc2;
   /* #31b2e9 */
+  /* #0586B8 */
+  /* #158fc2 */
   --primary-green: #b4d36a;
   --primary-black: #17171c;
   --medium: "Urbanist-Medium";
