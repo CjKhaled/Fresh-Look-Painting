@@ -268,6 +268,10 @@ section {
     color: var(--primary-green);
     text-decoration: underline;
   }
+
+  ul.nav-menu > li p svg {
+    display: none;
+  }
 }
 
 /* PHONE VIEW */
@@ -276,9 +280,30 @@ section {
     display: none;
   }
 
+  ul.nav-menu.active > li {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.nav-menu.active > li p {
+    border: solid 1px white;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ul.nav-menu.active > li.home {
+    border: none;
+  }
+
   ul.nav-menu.active {
-    display: block;
+    display: flex;
     position: absolute;
+    flex-direction: column;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -286,6 +311,43 @@ section {
     left: 0;
     background-color: var(--primary-blue);
     color: white;
+    padding: 24px;
+  }
+
+  ul.nav-menu.active > li a {
+    color: white;
+  }
+
+  ul.nav-menu.active li > ul.drop-menu.active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding: 10px;
+  }
+
+  ul.nav-menu.active li > ul.drop-menu {
+    display: none;
+  }
+
+  ul.nav-menu.active li > ul.drop-menu li {
+    gap: 0px;
+  }
+
+  ul.nav-menu.active li > ul.drop-menu span.sub-menu {
+    gap: 0px;
+  }
+
+  ul.nav-menu.active > li p svg {
+    display: block;
+  }
+
+  .nav-button {
+    position: relative;
+  }
+  
+  .nav-button svg.active {
+    display: none;
   }
 
   a .phone-number {
