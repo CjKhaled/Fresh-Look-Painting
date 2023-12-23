@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css/global.css" />
+    <link rel="stylesheet" href="/styles.css/homepages.css" />
+  </head>
+  <body>
+    <button data-open-modal>Open</button>
+    <dialog data-modal>
+      <div class="first-form-box">
+        <div class="form-title">
+          <h2>Project Information</h2>
+          <div data-close-modal>
+            <svg
+              width="44"
+              height="28"
+              viewBox="0 0 44 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Component 1">
+                <path
+                  id="Vector 3"
+                  d="M13.6133 8.50488L30.2328 25.3418"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector 4"
+                  d="M13.6719 25.3276L30.2775 8.50488"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <form id="firstForm">
+          <fieldset class="radio-buttons">
+            <legend>What Type Of Propery Needs Painting?</legend>
+
+            <input
+              type="radio"
+              name="type_project"
+              value="residential"
+              id="home"
+              class="lead-type"
+              aria-label="Home"
+            />
+            <label class="radio-label" for="home">Home</label>
+
+            <input
+              type="radio"
+              name="type_project"
+              value="commercial"
+              id="business"
+              class="lead-type"
+              aria-label="Business"
+            />
+            <label class="radio-label" for="business">Business</label>
+          </fieldset>
+
+          <fieldset class="radio-buttons two">
+            <legend>What Would You Like To Paint?</legend>
+
+            <input
+              type="radio"
+              name="type_painting"
+              value="exterior"
+              id="exterior"
+              class="lead-type"
+              aria-label="Exterior"
+            />
+            <label class="radio-label" for="exterior">Exterior</label>
+
+            <input
+              type="radio"
+              name="type_painting"
+              value="interior"
+              id="interior"
+              class="lead-type"
+              aria-label="Interior"
+            />
+            <label class="radio-label" for="interior">Interior</label>
+
+            <input
+              type="radio"
+              name="type_painting"
+              value="both"
+              id="both"
+              class="lead-type"
+              aria-label="Both"
+            />
+            <label class="radio-label" for="both">Both</label>
+          </fieldset>
+
+          <div class="transition-next">
+            NEXT
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="Arrow 1"
+                d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928933C8.95262 0.538409 8.31946 0.538409 7.92893 0.928933C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM-8.74228e-08 9L15 9L15 7L8.74228e-08 7L-8.74228e-08 9Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </form>
+      </div>
+
+      <div class="second-form-box active">
+        <div class="form-title">
+          <h2>Contact Information</h2>
+          <div data-close-modal>
+            <svg
+              width="44"
+              height="28"
+              viewBox="0 0 44 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Component 1">
+                <path
+                  id="Vector 3"
+                  d="M13.6133 8.50488L30.2328 25.3418"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector 4"
+                  d="M13.6719 25.3276L30.2775 8.50488"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <form id="secondForm">
+          <fieldset>
+            <legend>Your Contact Information</legend>
+            <div class="half-half">
+              <input
+                type="text"
+                name="first_name"
+                placeholder="First Name *"
+                aria-label="First Name"
+              />
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Last Name *"
+                aria-label="Last Name"
+              />
+            </div>
+            <div class="full">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email *"
+                aria-label="Email"
+                id="email"
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone *"
+                aria-label="Phone"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Property You Want An Estimate For:</legend>
+            <div class="full">
+              <input
+                type="text"
+                name="address1"
+                placeholder="Address 1 *"
+                aria-label="Address 1"
+              />
+              <input
+                type="text"
+                name="city"
+                placeholder="City *"
+                aria-label="City"
+              />
+              <input
+                type="text"
+                name="zip"
+                placeholder="Zip / Postal Code *"
+                aria-label="Zip / Postal Code"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Add Project details:</legend>
+            <textarea
+              name="project_details"
+              placeholder="Add project details..."
+              aria-label="Project Details"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <div class="buttons">
+            <div class="transition-back">
+              <svg
+                width="9"
+                height="12"
+                viewBox="0 0 9 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="Arrow 2"
+                  d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989592 6.3033 0.696699C6.01041 0.403805 5.53553 0.403805 5.24264 0.696699L0.46967 5.46967ZM9 5.25L1 5.25L1 6.75L9 6.75L9 5.25Z"
+                  fill="white"
+                />
+              </svg>
+              Back
+            </div>
+            <button class="transition-done" type="submit" id="submitBtn">
+              SUBMIT FOR ESTIMATE
+            </button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const openButton = [...document.querySelectorAll("[data-open-modal]")];
+      const closeButton = [...document.querySelectorAll("[data-close-modal]")];
+      const firstNextButton = document.querySelector(
+        ".first-form-box > form > div.transition-next"
+      );
+      const firstBackButton = document.querySelector(
+        ".second-form-box > form > .buttons > div.transition-back"
+      );
+      const firstFormBox = document.querySelector(".first-form-box");
+      const secondFormBox = document.querySelector(".second-form-box");
+      const modal = document.querySelector("[data-modal]");
+
+      openButton.forEach((button) => {
+        button.addEventListener("click", () => {
+          modal.showModal();
+        });
+      });
+
+      closeButton.forEach((button) => {
+        button.addEventListener("click", () => {
+          modal.close();
+        });
+      });
+
+      firstNextButton.addEventListener("click", () => {
+        firstNextButton.parentElement.parentElement.classList.add("active");
+        secondFormBox.classList.remove("active");
+      });
+
+      firstBackButton.addEventListener("click", () => {
+        firstBackButton.parentElement.parentElement.parentElement.classList.add(
+          "active"
+        );
+        firstFormBox.classList.remove("active");
+      });
+
+      const firstForm = document.getElementById("firstForm");
+      const secondForm = document.getElementById("secondForm");
+      const submitBtn = document.getElementById("submitBtn");
+
+      function sendEmail(dataFromForm) {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "clauvinsalexander@gmail.com",
+          Password: "049412D9E160D56B9C22D9664CDC237C780C",
+          To: "clauvinsalexander@gmail.com",
+          From: "changedirectionbusiness@gmail.com",
+          Subject: "NEW LEAD FROM WEBSITE",
+          Body: dataFromForm,
+        }).then((message) => alert(message));
+      }
+
+      secondForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(firstForm);
+
+        formData.forEach((value, key) => {
+          const input = document.createElement("input");
+          input.type = "hidden";
+          input.name = key;
+          input.value = value;
+          secondForm.appendChild(input);
+        });
+
+        const finalFormData = new FormData(secondForm);
+        const data = Object.fromEntries(finalFormData);
+        const dataToSend = `New Lead!<br><br>
+                            Type Of Project: ${data.type_project}<br>
+                            Interior or Exterior: ${data.type_painting}<br>
+                            Full Name: ${data.first_name} ${data.last_name}<br>
+                            Email: ${data.email}<br>
+                            Phone Number: ${data.phone}<br>
+                            Full Address: ${data.address1}, ${data.city}, FL, ${data.zip}<br>
+                            Any Other Details: ${data.project_details.length == 0 ? "N/A" : data.project_details}`
+
+        window.location.assign("/painters-in-bradenton-fl/")
+        sendEmail(dataToSend);
+      });
+    </script>
+  </body>
+</html>

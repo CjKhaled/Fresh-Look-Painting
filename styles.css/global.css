@@ -372,6 +372,7 @@ section {
 
   .nav-button {
     display: block;
+    cursor: pointer;
   }
 
   footer {
@@ -415,6 +416,163 @@ section {
   article.footer {
     width: 240px;
     height: fit-content;
+  }
+}
+
+/* FORM */
+
+button.transition-next {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.first-form-box.active,
+.second-form-box.active {
+  display: none;
+}
+
+.form-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000a2d;
+  color: white;
+  padding: 14px 24px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-title h2 {
+  font-family: var(--extra-bold);
+  font-size: 21px;
+}
+
+.form-title button {
+  background-color: none;
+}
+
+dialog {
+  width: 533px;
+  position: fixed;
+  border: 2px solid #000a2d;
+  border-radius: 0px 0px 5px 5px;
+  margin: auto;
+  height: fit-content;
+}
+
+dialog svg {
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  padding: 24px;
+}
+
+fieldset legend {
+  font-family: var(--extra-bold);
+  font-size: 18px;
+}
+
+fieldset.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset.radio-buttons > input {
+  display: none;
+}
+
+fieldset.radio-buttons > label.radio-label {
+  font-family: var(--extra-bold);
+  font-size: 18px;
+  background-color: #000a2d;
+  color: white;
+  width: 209px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+fieldset.radio-buttons.two > label.radio-label {
+  width: 128px;
+}
+
+fieldset.radio-buttons > input:checked + label {
+  background-color: var(--primary-blue);
+  color: white;
+  transition: 0.1s;
+}
+
+div.transition-next,
+div.transition-back,
+button.transition-done {
+  margin: 24px;
+  background-color: #000a2d;
+  color: white;
+  font-family: var(--extra-bold);
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.transition-done {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+}
+
+.second-form-box > form > fieldset {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.second-form-box > form > fieldset > div > input,
+.second-form-box > form > fieldset > textarea {
+  height: 59px;
+  padding: 16px;
+  font-family: var(--medium);
+  color: #000a2d;
+  font-size: 21px;
+  width: 100%;
+  border: solid 0.5px #010a2d;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  resize: none;
+}
+
+.second-form-box > form > .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  dialog {
+    width: 100%;
+  }
+
+  fieldset {
+    padding: 14px;
+  }
+
+  fieldset.radio-buttons > label.radio-label {
+    width: 48%;
+  }
+
+  fieldset.radio-buttons.two > label.radio-label {
+    width: 31%;
   }
 }
 
