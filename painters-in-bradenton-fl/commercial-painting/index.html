@@ -6,30 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles.css/global.css" />
     <link rel="stylesheet" href="/styles.css/homepages.css" />
-    <style>
-      .lead-type.wrong ~ label.radio-label {
-        animation: shake .13s 3;
-        background-color: red;
-      }
-
-      @keyframes shake {
-        0% {
-          transform: translateX(0);
-        }
-        40% {
-          transform: translateX(10px);
-        }
-        100% {
-          transform: translateX(-10px);
-        }
-      }
-
-      span.incorrect {
-        color: red;
-        font-family: var(--medium);
-        font-size: 18px;
-      }
-    </style>
   </head>
   <body>
     <button data-open-modal>Open</button>
@@ -182,6 +158,7 @@
                 id="first_name"
                 placeholder="First Name *"
                 aria-label="First Name"
+                autocomplete="given-name"
               />
               <span class="incorrect first-name"></span>
               <input
@@ -190,6 +167,7 @@
                 id="last_name"
                 placeholder="Last Name *"
                 aria-label="Last Name"
+                autocomplete="family-name"
               />
               <span class="incorrect last-name"></span>
             </div>
@@ -200,6 +178,7 @@
                 placeholder="Email *"
                 aria-label="Email"
                 id="email"
+                autocomplete="email"
               />
               <span class="incorrect email"></span>
               <input
@@ -209,6 +188,7 @@
                 aria-label="Phone"
                 id="phone"
                 onkeydown="numberFormatter()"
+                autocomplete="tel"
               />
             </div>
           </fieldset>
@@ -221,18 +201,21 @@
                 name="address1"
                 placeholder="Address 1 *"
                 aria-label="Address 1"
+                autocomplete="on"
               />
               <input
                 type="text"
                 name="city"
                 placeholder="City *"
                 aria-label="City"
+                autocomplete="on"
               />
               <input
                 type="text"
                 name="zip"
                 placeholder="Zip / Postal Code *"
                 aria-label="Zip / Postal Code"
+                autocomplete="postal-code"
               />
             </div>
           </fieldset>
@@ -417,14 +400,9 @@
 
         if (validation()) {
           sendEmail(dataToSend);
-          window.location.assign("/painters-in-bradenton-fl/")
-        } else {
-          alert('sorry not sorry')
+          window.location.assign("/thank-you/")
         }
-        
-      });
-
-      
+      });      
     </script>
   </body>
 </html>

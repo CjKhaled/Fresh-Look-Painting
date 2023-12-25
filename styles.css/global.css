@@ -57,6 +57,7 @@
   --section-header: "Urbanist-Black";
   --light: "Urbanist-Light";
   --number: "DM Serif Display Regular";
+  --transition: all 500ms ease;
 }
 
 /* NAV BAR */
@@ -147,11 +148,13 @@
     border-radius: 8px;
     width: 191px;
     height: 38px;
+    transition: var(--transition);
   }
 
   ul.nav-menu li > ul.drop-menu a:hover {
     background-color: white;
     color: var(--primary-blue);
+    transition: var(--transition);
   }
 
    a .phone-number {
@@ -162,6 +165,12 @@
     font-family: var(--semi-bold);
     font-size: 24px;
     color: var(--primary-black);
+    transition: var(--transition);
+  }
+
+  a .phone-number:hover {
+    color: var(--primary-green);
+    transition: var(--transition);
   }
 
   .call-to-action {
@@ -173,12 +182,14 @@
     font-family: var(--bold);
     font-size: 18px;
     cursor: pointer;
-    border: solid 1px var(--primary-blue)
+    border: solid 1px var(--primary-blue);
+    transition: var(--transition);
   }
 
   .call-to-action:hover {
     background-color: white;
     color: var(--primary-blue);
+    transition: var(--transition);
   }
 }
 
@@ -427,6 +438,29 @@ section {
 
 /* FORM */
 
+.lead-type.wrong ~ label.radio-label {
+  animation: shake .13s 3;
+  background-color: red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+span.incorrect {
+  color: red;
+  font-family: var(--medium);
+  font-size: 18px;
+}
+
 button.transition-next {
   display: flex;
   flex-direction: row;
@@ -465,6 +499,7 @@ dialog {
   border-radius: 0px 0px 5px 5px;
   margin: auto;
   height: fit-content;
+  transition: var(--transition);
 }
 
 dialog svg {
@@ -499,8 +534,9 @@ fieldset.radio-buttons > label.radio-label {
   border-radius: 8px;
   padding: 10px 20px;
   text-align: center;
+  border: solid 1px var(--primary-blue);
   cursor: pointer;
-  transition: 0.1s;
+  transition: var(--transition);
 }
 
 fieldset.radio-buttons.two > label.radio-label {
@@ -509,9 +545,8 @@ fieldset.radio-buttons.two > label.radio-label {
 
 fieldset.radio-buttons > input:checked + label {
   background-color: white;
-  border: solid 1px var(--primary-blue);
   color: var(--primary-blue);
-  transition: 0.1s;
+  transition: var(--transition);
 }
 
 div.transition-next,
