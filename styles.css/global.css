@@ -173,6 +173,12 @@
     font-family: var(--bold);
     font-size: 18px;
     cursor: pointer;
+    border: solid 1px var(--primary-blue)
+  }
+
+  .call-to-action:hover {
+    background-color: white;
+    color: var(--primary-blue);
   }
 }
 
@@ -436,7 +442,7 @@ button.transition-next {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #000a2d;
+  background-color: var(--primary-blue);
   color: white;
   padding: 14px 24px;
   align-items: center;
@@ -455,7 +461,7 @@ button.transition-next {
 dialog {
   width: 533px;
   position: fixed;
-  border: 2px solid #000a2d;
+  border: 2px solid var(--primary-blue);
   border-radius: 0px 0px 5px 5px;
   margin: auto;
   height: fit-content;
@@ -487,9 +493,9 @@ fieldset.radio-buttons > input {
 fieldset.radio-buttons > label.radio-label {
   font-family: var(--extra-bold);
   font-size: 18px;
-  background-color: #000a2d;
+  background-color: var(--primary-blue);
   color: white;
-  width: 209px;
+  width: 48%;
   border-radius: 8px;
   padding: 10px 20px;
   text-align: center;
@@ -498,12 +504,13 @@ fieldset.radio-buttons > label.radio-label {
 }
 
 fieldset.radio-buttons.two > label.radio-label {
-  width: 128px;
+  width: 31%;
 }
 
 fieldset.radio-buttons > input:checked + label {
-  background-color: var(--primary-blue);
-  color: white;
+  background-color: white;
+  border: solid 1px var(--primary-blue);
+  color: var(--primary-blue);
   transition: 0.1s;
 }
 
@@ -511,7 +518,7 @@ div.transition-next,
 div.transition-back,
 button.transition-done {
   margin: 24px;
-  background-color: #000a2d;
+  background-color: var(--primary-blue);
   color: white;
   font-family: var(--extra-bold);
   font-size: 20px;
@@ -528,7 +535,12 @@ button.transition-done {
 button.transition-done {
   background-color: var(--primary-blue);
   color: white;
-  border: none;
+  border: solid 1px var(--primary-blue)
+}
+
+button.transition-done:hover {
+  background-color: white;
+  color: var(--primary-blue);
 }
 
 .second-form-box > form > fieldset {
@@ -565,14 +577,6 @@ button.transition-done {
 
   fieldset {
     padding: 14px;
-  }
-
-  fieldset.radio-buttons > label.radio-label {
-    width: 48%;
-  }
-
-  fieldset.radio-buttons.two > label.radio-label {
-    width: 31%;
   }
 }
 
