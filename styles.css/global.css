@@ -191,6 +191,10 @@
     color: var(--primary-blue);
     transition: var(--transition);
   }
+
+  nav .call-to-action {
+    width: fit-content;
+  }
 }
 
 section {
@@ -441,6 +445,7 @@ section {
 .lead-type.wrong ~ label.radio-label {
   animation: shake .13s 3;
   background-color: red;
+  border-color: red;
 }
 
 @keyframes shake {
@@ -541,6 +546,7 @@ fieldset.radio-buttons > label.radio-label {
 
 fieldset.radio-buttons.two > label.radio-label {
   width: 31%;
+  padding: 10px;
 }
 
 fieldset.radio-buttons > input:checked + label {
