@@ -199,10 +199,13 @@
     margin-top: 76px;
     background-color: grey;
     height: fit-content;
+    position: relative;
   }
 
   #cta .cta-overlay {
-    background-color: rgba(0, 0, 0, 0.25)
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    position: relative;
   }
 
   #cta .cta-container {
@@ -213,6 +216,7 @@
     align-items: center;
     text-align: center;
     padding: 165px 0;
+    position: relative;
   }
 
   #cta h2 {
@@ -342,6 +346,7 @@
 
   #services-section .services-content .service-card .service-image {
     height: 250px;
+    width: 327px;
     background-color: grey;
   }
 
@@ -694,8 +699,21 @@
 @media screen and (max-width: 600px) {
   #hero-section .hero-left-side .img-holder {
     width: 320px;
-    height: 330px;
+    height: 430px;
   }
+
+  #cta h2 {
+    font-size: 34px;
+  }
+
+  #cta p {
+    font-size: 20px;
+  }
+
+  #cta .call-to-action {
+    font-size: 20px;
+  }
+
   
   #benefits-section {
     height: fit-content;

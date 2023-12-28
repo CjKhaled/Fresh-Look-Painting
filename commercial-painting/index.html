@@ -1225,6 +1225,19 @@
         </form>
       </div>
     </dialog>
+    <dialog id="submission-load" data-modal>
+      <div class="loading-container">
+        <p style="font-family: var(--medium); font-size: 24px; color: white">
+        Submitting Your Form...
+      </p>
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+      
+    </dialog>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       const openButton = [...document.querySelectorAll("[data-open-modal]")];
@@ -1241,53 +1254,62 @@
 
       // Phone Validation
       function formatNumber(value) {
-        if (!value) return value
-        const phoneNumber = value.replace(/[^\d]/g, '')
-        if (phoneNumber.length < 4) return phoneNumber
+        if (!value) return value;
+        const phoneNumber = value.replace(/[^\d]/g, "");
+        if (phoneNumber.length < 4) return phoneNumber;
         if (phoneNumber.length < 7) {
-          return `(${phoneNumber.slice(0,3)}) ${phoneNumber.slice(3)}`
+          return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
         }
 
-        return `(${phoneNumber.slice(0,3)}) ${phoneNumber.slice(3,6)}-${phoneNumber.slice(6,9)}`
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+          3,
+          6
+        )}-${phoneNumber.slice(6, 9)}`;
       }
 
       function numberFormatter() {
-        const phone = document.getElementById('phone')
-        const formattedInputValue = formatNumber(phone.value)
-        phone.value = formattedInputValue
+        const phone = document.getElementById("phone");
+        const formattedInputValue = formatNumber(phone.value);
+        phone.value = formattedInputValue;
       }
 
       // Validation
-      const options = [...document.querySelectorAll('input.lead-type')]
+      const options = [...document.querySelectorAll("input.lead-type")];
       function validation() {
-        let canWeSubmit = true
+        let canWeSubmit = true;
         // Patterns
-        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
         // Inputs
-        const email = document.getElementById('email')
-        const firstName = document.getElementById('first_name')
-        const lastName = document.getElementById('last_name')
+        const email = document.getElementById("email");
+        const firstName = document.getElementById("first_name");
+        const lastName = document.getElementById("last_name");
         // Error Cases
-        const emailError = document.querySelector('span.incorrect.email')
-        const firstNameError = document.querySelector('span.incorrect.first-name')
-        const lastNameError = document.querySelector('span.incorrect.last-name')
+        const emailError = document.querySelector("span.incorrect.email");
+        const firstNameError = document.querySelector(
+          "span.incorrect.first-name"
+        );
+        const lastNameError = document.querySelector(
+          "span.incorrect.last-name"
+        );
 
         if (firstName.value.length < 2 || firstName.value.length > 24) {
-          firstNameError.innerHTML = "First Name Needs To Be between 2 - 24 characters"
-          canWeSubmit = false
+          firstNameError.innerHTML =
+            "First Name Needs To Be between 2 - 24 characters";
+          canWeSubmit = false;
         }
 
         if (lastName.value.length < 2 || lastName.value.length > 24) {
-          lastNameError.innerHTML = "Last Name Needs To Be between 2 - 24 characters"
-          canWeSubmit = false
+          lastNameError.innerHTML =
+            "Last Name Needs To Be between 2 - 24 characters";
+          canWeSubmit = false;
         }
 
         if (!email.value.match(emailPattern)) {
-          emailError.innerHTML = "Please Enter Valid Email Address"
-          canWeSubmit = false
+          emailError.innerHTML = "Please Enter Valid Email Address";
+          canWeSubmit = false;
         }
 
-        return canWeSubmit
+        return canWeSubmit;
       }
 
       openButton.forEach((button) => {
@@ -1303,22 +1325,22 @@
       });
 
       firstNextButton.addEventListener("click", () => {
-        let checkAmount = 0
+        let checkAmount = 0;
         options.forEach((option) => {
           if (option.checked) {
-            checkAmount += 1
+            checkAmount += 1;
           }
-        })
+        });
         if (checkAmount !== 2) {
           options.forEach((option) => {
-            option.classList.add('wrong')
+            option.classList.add("wrong");
             setTimeout(() => {
-              option.classList.remove('wrong')
-            }, 1000)
-          })
+              option.classList.remove("wrong");
+            }, 1000);
+          });
         } else {
           firstNextButton.parentElement.parentElement.classList.add("active");
-        secondFormBox.classList.remove("active");
+          secondFormBox.classList.remove("active");
         }
       });
 
@@ -1332,6 +1354,16 @@
       const firstForm = document.getElementById("firstForm");
       const secondForm = document.getElementById("secondForm");
       const submitBtn = document.getElementById("submitBtn");
+      const loadingModal = document.querySelector("#submission-load");
+
+      function sendAlert(message) {
+        loadingModal.showModal();
+        if (message == "OK") {
+          window.location.assign("/thank-you/");
+        } else {
+          alert("Something is wrong with our servers. Hang tight.");
+        }
+      }
 
       function sendEmail(dataFromForm) {
         Email.send({
@@ -1342,7 +1374,7 @@
           From: "changedirectionbusiness@gmail.com",
           Subject: "NEW LEAD FROM WEBSITE",
           Body: dataFromForm,
-        });
+        }).then((message) => sendAlert(message));
       }
 
       secondForm.addEventListener("submit", (e) => {
@@ -1366,14 +1398,19 @@
                             Full Name: ${data.first_name} ${data.last_name}<br>
                             Email: ${data.email}<br>
                             Phone Number: ${data.phone}<br>
-                            Full Address: ${data.address1}, ${data.city}, FL, ${data.zip}<br>
-                            Any Other Details: ${data.project_details.length == 0 ? "N/A" : data.project_details}`
+                            Full Address: ${data.address1}, ${data.city}, FL, ${
+          data.zip
+        }<br>
+                            Any Other Details: ${
+                              data.project_details.length == 0
+                                ? "N/A"
+                                : data.project_details
+                            }`;
 
         if (validation()) {
           sendEmail(dataToSend);
-          window.location.assign("/thank-you/")
         }
-      });      
+      });
     </script>
   </body>
 </html>
