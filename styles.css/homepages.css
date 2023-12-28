@@ -6,6 +6,7 @@
     justify-content: space-between;
     position: relative;
     height: fit-content;
+    max-width: 1440px;
   }
 
   #hero-section .hero-right-side {
@@ -468,7 +469,11 @@
   #process-section .process-steps .step-odd .step-image {
     height: 485px;
     width: 460px;
+    border-radius: 32px 0px 32px 0px;
     background-color: grey;
+  }
+
+  #process-section .process-steps .step-odd .step-image img {
     border-radius: 32px 0px 32px 0px;
   }
 
@@ -476,6 +481,10 @@
     height: 485px;
     width: 460px;
     background-color: grey;
+    border-radius: 0px 32px 0px 32px;
+  }
+
+  #process-section .process-steps .step-even .step-image img {
     border-radius: 0px 32px 0px 32px;
   }
 
@@ -525,7 +534,7 @@
   }
 
   #about .about-content .about-image {
-    background-color: grey;
+    /* background-color: grey; */
     width: 635px;
     height: 597px;
   }
