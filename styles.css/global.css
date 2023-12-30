@@ -10,12 +10,16 @@
 
 @font-face {
   font-family: "Urbanist-Bold";
+  font-display: swap;
+  font-style: normal;
   src: url("/fonts/Urbanist-Bold.woff2") format("woff2"),
   url("/fonts/Urbanist-Bold.otf") format("otf");
 }
 
 @font-face {
   font-family: "Urbanist-SemiBold";
+  font-display: swap;
+  font-style: normal;
   src: url("/fonts/Urbanist-SemiBold.woff2") format("woff2"),
   url("/fonts/Urbanist-SemiBold.otf") format("otf");
 }
@@ -31,22 +35,30 @@
 
 @font-face {
   font-family: "Urbanist-Medium";
+  font-display: swap;
+  font-style: normal;
   src: url("/fonts/Urbanist-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Urbanist-Black";
+  font-display: swap;
+  font-style: normal;
   src: url("/fonts/Urbanist-Black.woff2") format("woff2"),
   url("/fonts/Urbanist-Black.otf") format("otf");
 }
 
 @font-face {
   font-family: "Urbanist-Light";
+  font-display: swap;
+  font-style: normal;
   src: url("/fonts/Urbanist-Light.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "DM Serif Display Regular";
+    font-display: swap;
+    font-style: normal;
     src: url('/fonts/DMSerifDisplay-Regular.woff');
 }
 
