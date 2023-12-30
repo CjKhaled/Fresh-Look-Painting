@@ -7,6 +7,7 @@
     position: relative;
     height: fit-content;
     max-width: 1440px;
+    margin-top: 76px;
   }
 
   #hero-section .hero-right-side {
@@ -47,7 +48,7 @@
 
   #hero-section .hero-left-side .img-holder {
     background-color: grey;
-    width: 500px;
+    width: 600px;
     height: 656px;
     position: relative;
     margin-bottom: 114px;
@@ -534,7 +535,7 @@
   }
 
   #about .about-content .about-image {
-    /* background-color: grey; */
+    background-color: grey;
     width: 635px;
     height: 597px;
   }
