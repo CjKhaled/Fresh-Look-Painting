@@ -21,6 +21,7 @@
   font-family: "Urbanist-SemiBold";
   font-display: swap;
   font-style: normal;
+  font-weight: 600;
   src: url("/fonts/Urbanist-SemiBold.woff2") format("woff2"),
   url("/fonts/Urbanist-SemiBold.otf") format("otf");
 }
@@ -45,6 +46,7 @@
   font-family: "Urbanist-Black";
   font-display: swap;
   font-style: normal;
+  font-weight: 700;
   src: url("/fonts/Urbanist-Black.woff2") format("woff2"),
   url("/fonts/Urbanist-Black.otf") format("otf");
 }
@@ -60,6 +62,7 @@
     font-family: "DM Serif Display Regular";
     font-display: swap;
     font-style: normal;
+    font-weight: 400;
     src: url('/fonts/DMSerifDisplay-Regular.woff');
 }
 
