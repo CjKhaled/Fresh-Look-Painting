@@ -10,12 +10,14 @@
 
 @font-face {
   font-family: "Urbanist-Bold";
-  src: url("/fonts/Urbanist-Bold.woff2") format("woff2");
+  src: url("/fonts/Urbanist-Bold.woff2") format("woff2"),
+  url("/fonts/Urbanist-Bold.otf") format("otf");
 }
 
 @font-face {
   font-family: "Urbanist-SemiBold";
-  src: url("/fonts/Urbanist-SemiBold.woff2") format("woff2");
+  src: url("/fonts/Urbanist-SemiBold.woff2") format("woff2"),
+  url("/fonts/Urbanist-SemiBold.otf") format("otf");
 }
 
 @font-face {
@@ -24,9 +26,7 @@
   font-style: normal;
   font-weight: 800;
   src: url("/fonts/Urbanist-ExtraBold.woff2") format("woff2"),
-  url('/fonts/Urbanist-ExtraBold.otf') format('otf'),
-  /* url('/fonts/Urbanist-ExtraBold.ttf') format('ttf'),
-  url('/fonts/urbanist-v15-latin-800.woff2') format('woff2'); */
+  url('/fonts/Urbanist-ExtraBold.otf') format('otf')
 }
 
 @font-face {
@@ -36,7 +36,8 @@
 
 @font-face {
   font-family: "Urbanist-Black";
-  src: url("/fonts/Urbanist-Black.woff2") format("woff2");
+  src: url("/fonts/Urbanist-Black.woff2") format("woff2"),
+  url("/fonts/Urbanist-Black.otf") format("otf");
 }
 
 @font-face {
