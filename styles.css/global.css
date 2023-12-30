@@ -20,7 +20,13 @@
 
 @font-face {
   font-family: "Urbanist-ExtraBold";
-  src: url("/fonts/Urbanist-ExtraBold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/Urbanist-ExtraBold.woff2") format("woff2"),
+  url('/fonts/Urbanist-ExtraBold.otf') format('otf'),
+  url('/fonts/Urbanist-ExtraBold.ttf') format('ttf'),
+  url('/fonts/urbanist-v15-latin-800.woff2') format('woff2');
 }
 
 @font-face {
