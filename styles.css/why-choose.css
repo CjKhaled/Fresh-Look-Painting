@@ -4,26 +4,103 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 300px;
+    gap: 20px;
     text-align: center;
 }
 
-#mission-section h2 {
-    font-family: var(--section-header);
-    font-size: 46px;
-    margin-bottom: 18px;
+#mission-section .mission-card {
+    padding: 32px 32px 40px;
+    border-radius: 8px;
+    border: solid 1px #00000021;
+    box-shadow: 0px 4px 21.9px #00000021;
+    width: 373px;
+    height: 296px;
 }
 
-#mission-section h2 span {
+#mission-section .mission-card .mission-title {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 23px;
+}
+
+#mission-section .mission-card .mission-title h2 {
+    font-family: var(--semi-bold);
+    font-size: 28px;
+}
+
+#mission-section .mission-card .mission-title h2 span {
     color: var(--primary-blue);
 }
 
-#mission-section > div {
-    width: 355px;
-}
-
-#mission-section p {
-    font-size: 20px;
+#mission-section .mission-card .mission-content p {
+    font-size: 16px;
     font-family: var(--medium);
 }
+
+#experience-section {
+    margin-bottom: 76px;
+}
+
+#experience-section span {
+    color: var(--primary-blue);
+}
+
+#experience-section .experience-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#experience-section .experience-title h2 {
+    font-family: var(--section-header);
+    font-size: 46px;
+}
+
+#experience-section .experience-title p {
+    font-family: var(--bold);
+    font-size: 20px;
+}
+
+#experience-section .experience-title .experience-image {
+    background-color: grey;
+    height: 250px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+#experience-section .experience-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 30px;
+}
+
+#experience-section .experience-content .benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 550px;
+}
+
+#experience-section .experience-content .benefit h2 {
+    font-family: var(--section-header);
+    font-size: 46px;
+    margin-top: 30px;
+}
+
+#experience-section .experience-content .benefit p {
+    font-family: var(--bold);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #experience-section .experience-content .benefit {
+        width: 321px;
+    }
+}
+
+
+
 

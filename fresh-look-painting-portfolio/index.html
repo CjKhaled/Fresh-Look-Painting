@@ -147,7 +147,7 @@
               <span>941-977-9377</span>
             </div>
           </a>
-          <button class="call-to-action">GET FREE ESTIMATE</button>
+          <button class="call-to-action" data-open-modal>GET FREE ESTIMATE</button>
           <div class="nav-button">
             <svg
               id="nav_button"
@@ -200,11 +200,23 @@
             <span>clear communication</span> to make sure you get a painting
             company you can trust. Check out our portfolio here.
           </p>
-          <button class="call-to-action">SCHEDULE A FREE ESTIMATE</button>
+          <button class="call-to-action" data-open-modal>SCHEDULE A FREE ESTIMATE</button>
         </div>
         <div class="background-square"></div>
         <div class="hero-left-side">
-          <div class="img-holder"></div>
+          <div class="img-holder">
+            <img
+              src="/assests/hero-images/the-fresh-look-painting-team.webp"
+              alt="The Fresh Look Painting Team"
+              width="100%"
+              height="100%"
+              srcset="
+                /assests/hero-images/the-fresh-look-painting-team-mobile.webp  320w,
+                /assests/hero-images/the-fresh-look-painting-team.webp        1000w
+              "
+              sizes="(max-width: 600px) 320w, 1000w"
+            />
+          </div>
         </div>
       </section>
       <section id="portfolio-section">
@@ -233,14 +245,14 @@
               estimate. Our team is here to answer all of your questions and
               provide expert advice.
             </p>
-            <button class="call-to-action">SCHEDULE NOW</button>
+            <button class="call-to-action" data-open-modal>SCHEDULE NOW</button>
           </div>
         </div>
       </section>
       <section id="service-areas">
         <div class="area-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28354.201079948853!2d-82.55852989397738!3d27.33586558942572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c337e69db2c22b%3A0xe335341d1d5715d9!2sSarasota%2C%20FL!5e0!3m2!1sen!2sus!4v1703081092710!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14179.83041601243!2d-82.3963084!3d27.3145154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6a8086caa9fe4aab%3A0x727c918c38445a49!2sFresh%20Look%20Painting!5e0!3m2!1sen!2sus!4v1703787476384!5m2!1sen!2sus"
             width="100%"
             height="792px"
             style="border: 0"

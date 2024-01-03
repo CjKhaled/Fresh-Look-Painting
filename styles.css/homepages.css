@@ -6,7 +6,6 @@
     justify-content: space-between;
     position: relative;
     height: fit-content;
-    max-width: 1440px;
     margin-top: 76px;
   }
 
@@ -71,7 +70,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 941px;
   }
 
   #benefits-section .benefits-title h2 {
@@ -103,27 +101,37 @@
   #benefits-section .benefits-content .benefits-list {
     margin-top: 126px;
     display: flex;
-    flex-direction: column;
-    gap: 16px
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
   }
 
   #benefits-section .benefits-content .benefits-list .benefit {
     display: flex;
-    flex-direction: row;
-    gap: 19px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    border: solid 1px #00000021;
+    box-shadow: 0px 4px 21.9px #00000021;
+    border-radius: 18px;
+    padding: 46px 26px 88px;
+    height: 370px;
+    width: 344px;
   }
   
   #benefits-section .benefits-content .benefits-list h2 {
-    color: var(--primary-blue);
+    color: black;
     font-family: var(--section-header);
-    font-size: 32px;
-    margin-bottom: 7px;
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 
   #benefits-section .benefits-content .benefits-list p {
     font-family: var(--bold);
-    width: 455px;
     margin-bottom: 26px;
+    overflow-wrap: break-word;
   }
 
   #benefits-section .benefits-title {
@@ -494,7 +502,8 @@
     flex-direction: column;
     gap: 100px;
     height: fit-content;
-    margin-bottom: 76px;
+    margin-bottom: 0px;
+    position: relative;
   }
 
   #about .about-title h2 {
@@ -502,6 +511,21 @@
     font-family: var(--section-header);
     margin-bottom: 20px;
     text-align: center;
+    position: relative;
+    color: white;
+    margin-top: 100px;
+  }
+
+  #about .about-background {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: absolute;
+    right: 50%;
+    width: 99.6vw;
+    display: flex;
+    top: 0;
+    bottom: 0;
   }
 
   #about .about-title h2 span {
@@ -516,6 +540,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
   }
 
   #about .about-content .about-text {
@@ -528,6 +553,7 @@
     font-family: var(--medium);
     width: 500px;
     font-size: 24px;
+    color: white;
   }
 
   #about .about-content .about-text a {
@@ -539,6 +565,13 @@
     background-color: grey;
     width: 635px;
     height: 597px;
+  }
+
+  #about .about-content .about-image.owner {
+    width: 435px;
+    height: 435px;
+    border-radius: 12px;
+    margin-bottom: 76px;
   }
 
   #service-areas {
@@ -745,6 +778,11 @@
     height: 330px;
   }
 
+  #about .about-content .about-image.owner {
+    width: 343px;
+    height: 343px;
+  }
+
   #service-areas .area-map iframe {
     position: relative;
   }
@@ -767,5 +805,9 @@
   #service-areas .area-content .area-title h2 {
     font-size: 25px;
     margin-top: 20px;
+  }
+  
+  #about .about-background {
+    width: 100vw;
   }
 }
