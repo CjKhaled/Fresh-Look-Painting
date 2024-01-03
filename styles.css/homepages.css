@@ -494,6 +494,7 @@
     flex-direction: column;
     gap: 100px;
     height: fit-content;
+    margin-bottom: 76px;
   }
 
   #about .about-title h2 {
