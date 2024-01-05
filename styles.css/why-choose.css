@@ -65,8 +65,7 @@
 }
 
 #experience-section .experience-title .experience-image {
-    background-color: grey;
-    height: 250px;
+    height: auto;
     width: 100%;
     border-radius: 16px;
 }
