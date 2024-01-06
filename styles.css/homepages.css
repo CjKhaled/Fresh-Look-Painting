@@ -809,4 +809,8 @@
   #about .about-background {
     width: 100vw;
   }
+
+  #service-areas .area-content .locations {
+    margin-bottom: 40px;
+  }
 }
