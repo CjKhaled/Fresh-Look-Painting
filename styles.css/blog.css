@@ -1,3 +1,7 @@
+main {
+    position: relative;
+}
+
 .title-section h1 {
     color: var(--primary-blue);
     font-size: 48px;
@@ -65,7 +69,6 @@ section.blog-posts .blog-post .blog-content .blog-description button {
 }
 
 section.blog-header {
-    background-image: url('/assests/blog-images/blog-header.webp');
     margin: 0;
     margin-top: 144px;
     min-height: 280px;
@@ -84,7 +87,7 @@ section.blog-header h1 {
 }
 
 section.blog-header .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.75);
     min-height: 280px;
     width: 100%;
     position: absolute;
@@ -94,12 +97,12 @@ section.blog-intro {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 section.blog-intro .blog-intro-img {
     background-color: grey;
     height: 318px;
-    min-width: 360px;
     max-width: 360px;
 }
 
@@ -125,6 +128,7 @@ section.blog-intro .blog-intro-content .intro-top span {
 section.blog-intro .blog-intro-content .intro-top .social-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -142,6 +146,11 @@ section.blog-intro .blog-intro-content .intro-text {
 }
 
 section.main-blog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+section.main-blog-content h2, p, h3 {
     max-width: 894px;
 }
 
@@ -167,6 +176,7 @@ section.main-blog-content a {
     color: var(--primary-green);
     text-decoration: underline;
 }
+
 
 
 
