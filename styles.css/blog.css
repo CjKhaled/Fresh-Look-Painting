@@ -1,0 +1,178 @@
+.title-section h1 {
+    color: var(--primary-blue);
+    font-size: 48px;
+    text-align: center;
+    margin-top: 125px;
+    font-family: var(--extra-bold);
+    padding-bottom: 32px;
+}
+
+section.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+section.blog-posts .blog-post .blog-image {
+    background-color: grey;
+    height: 318px;
+    min-width: 360px;
+    max-width: 360px;
+}
+
+section.blog-posts .blog-post {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+
+section.blog-posts .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+section.blog-posts .blog-post .blog-content .blog-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.blog-posts .blog-post .blog-content .blog-category p.category {
+    font-size: 26px;
+    font-family: var(--medium);
+    color: var(--primary-blue);
+}
+
+section.blog-posts .blog-post .blog-content .blog-category p {
+    font-size: 16px;
+    font-family: var(--medium);
+}
+
+section.blog-posts .blog-post .blog-content .blog-title h2 {
+    font-family: var(--section-header);
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+section.blog-posts .blog-post .blog-content .blog-description p {
+    font-family: var(--medium);
+    margin-top: 10px;
+    font-size: 16px;
+}
+section.blog-posts .blog-post .blog-content .blog-description button {
+    margin-top: 24px;
+}
+
+section.blog-header {
+    background-image: url('/assests/blog-images/blog-header.webp');
+    margin: 0;
+    margin-top: 144px;
+    min-height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.blog-header h1 {
+    font-family: var(--bold);
+    margin: 0 136px;
+    color: white;
+    font-size: 36px;
+    position: relative;
+}
+
+section.blog-header .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 280px;
+    width: 100%;
+    position: absolute;
+}
+
+section.blog-intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.blog-intro .blog-intro-img {
+    background-color: grey;
+    height: 318px;
+    min-width: 360px;
+    max-width: 360px;
+}
+
+section.blog-intro .blog-intro-content {
+    background-color: #f4f3f3;
+    padding: 35px;
+    max-width: 684px;
+}
+
+section.blog-intro .blog-intro-content .intro-top {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.blog-intro .blog-intro-content .intro-top span {
+    font-size: 16px;
+    font-family: var(--bold);
+}
+
+section.blog-intro .blog-intro-content .intro-top .social-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+section.blog-intro .blog-intro-content .intro-top .social-buttons .social-button {
+    padding: 10px;
+    background-color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.blog-intro .blog-intro-content .intro-text {
+    font-size: 20px;
+    font-family: var(--medium);
+}
+
+section.main-blog-content {
+    max-width: 894px;
+}
+
+section.main-blog-content h2{
+    font-family: var(--section-header);
+    margin-bottom: 18px;
+    font-size: 36px;
+}
+
+section.main-blog-content p{
+    font-size: 20px;
+    font-family: var(--medium);
+    margin-bottom: 20px;
+}
+
+section.main-blog-content h3{
+    font-family: var(--semi-bold);
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+section.main-blog-content a {
+    color: var(--primary-green);
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    section.blog-posts .blog-post {
+        flex-direction: column;
+    }
+}
+

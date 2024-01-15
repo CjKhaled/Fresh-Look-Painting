@@ -2,23 +2,23 @@ main {
     margin: 144px 136px 40px;
 }
 
-h1 {
+main h1 {
     font-family: var(--extra-bold);
     font-size: 42px;
 }
 
-h2 {
+main h2 {
     font-family: var(--bold);
     font-size: 28px;
     margin-top: 30px;
 }
-
+main 
 p {
     font-family: var(--medium);
     font-size: 20px;
 }
 
-li {
+main li {
     list-style: inside;
     font-family: var(--medium);
     font-size: 18px;
