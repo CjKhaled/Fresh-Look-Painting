@@ -14,7 +14,7 @@ main {
 section.blog-posts {
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center;
     justify-content: center;
     gap: 45px;
 }
@@ -30,6 +30,7 @@ section.blog-posts .blog-post {
     display: flex;
     flex-direction: row;
     gap: 26px;
+    max-width: 1200px;
 }
 
 section.blog-posts .blog-post .blog-content {
