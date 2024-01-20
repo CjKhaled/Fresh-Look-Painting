@@ -348,7 +348,7 @@ section {
   }
 
   ul.nav-menu.active > li p {
-    border: solid 1px white;
+    border: solid 1px var(--primary-blue);
     border-radius: 8px;
     width: 100%;
     padding: 10px;
@@ -361,6 +361,10 @@ section {
     border: none;
   }
 
+  a .phone-number {
+    display: none;
+  }
+
   ul.nav-menu.active {
     display: flex;
     position: absolute;
@@ -370,8 +374,8 @@ section {
     height: 100vh;
     margin: 0;
     left: 0;
-    background-color: var(--primary-blue);
-    color: white;
+    background-color: white;
+    color: var(--primary-blue);
     padding: 24px;
   }
 
@@ -385,6 +389,9 @@ section {
     align-items: center;
     top: 0;
     padding: 10px;
+    
+    border: solid 1px var(--primary-blue);
+    background-color: white;
   }
 
   ul.nav-menu.active li > ul.drop-menu {
@@ -393,6 +400,12 @@ section {
 
   ul.nav-menu.active li > ul.drop-menu li {
     gap: 0px;
+    border: solid 1px var(--primary-blue);
+    border-radius: 8px;
+  }
+
+  ul.nav-menu.active li > ul.drop-menu li a {
+    color: var(--primary-blue);
   }
 
   ul.nav-menu.active li > ul.drop-menu span.sub-menu {
@@ -419,6 +432,8 @@ section {
 
   .logo a img {
     width: 160px;
+    position: relative;
+    z-index: 10;
   }
 
   nav button {

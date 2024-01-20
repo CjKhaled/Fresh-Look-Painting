@@ -23,10 +23,10 @@ function changeFillColor(newColor) {
 navButton.addEventListener('click', () => {
     if (activateNav.className.includes('active')) {
         activateNav.setAttribute('class', 'nav-menu')
-        changeStrokeColor('var(--primary-blue)')
+        // changeStrokeColor('var(--primary-blue)')
     } else {
         activateNav.setAttribute('class', 'nav-menu active')
-        changeStrokeColor('white')
+        // changeStrokeColor('white')
     }
 })
 
