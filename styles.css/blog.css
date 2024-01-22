@@ -170,6 +170,10 @@ section.main-blog-content p{
     margin-bottom: 20px;
 }
 
+section.main-blog-content p strong {
+    color: var(--primary-blue);
+}
+
 section.main-blog-content h3{
     font-family: var(--semi-bold);
     font-size: 28px;
