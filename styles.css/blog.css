@@ -33,6 +33,10 @@ section.blog-posts .blog-post {
     max-width: 1200px;
 }
 
+span a {
+    color: var(--primary-blue);
+}
+
 section.blog-posts .blog-post .blog-content {
     display: flex;
     flex-direction: column;
