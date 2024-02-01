@@ -3,7 +3,7 @@
   #hero-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     height: fit-content;
     margin-top: 76px;
